@@ -21,4 +21,15 @@ app.get('/api/notes',(req,res)=>{
   // Log our request to the terminal
   console.info(data);
 });
+app.post("/api/notes/", function(req,res) {
+  //logic to post a note
+  res.json(true);
+});
+//catch all path
+app.get('*',(req,res)=>{
+  res.sendFile(path.join(__dirname,'/public/index.html'));
+});
 
+app.listen(PORT, () =>
+  console.log(`Example app listening at http://localhost:${PORT}`)
+);
