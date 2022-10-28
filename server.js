@@ -15,4 +15,10 @@ app.get('/notes',(req,res)=>{
 });
 //api routes
 
+app.get('/api/notes',(req,res)=>{
+  res.json(data);
+
+  // Log our request to the terminal
+  console.info(data);
+});
 
