@@ -1,7 +1,7 @@
 const express=require('express');
 const path=require('path');
 const app = express();
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 const data = require('./db/db.json');
 const uuid = require('./helper/uuid');
 const fs = require('fs');
@@ -21,6 +21,7 @@ app.get('/api/notes',(req,res)=>{
   // Log our request to the terminal
   console.info(data);
 });
+
 app.post("/api/notes/", function(req,res) {
   //logic to post a note
   res.json(true);
