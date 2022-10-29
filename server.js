@@ -52,8 +52,8 @@ app.post("/api/notes/", function(req,res) {
     });
         
 
-  }// end of ifstatement 
-  res.json(newNote)
+  }//ifstatement 
+  res.json(newNote);
 });
 
 //catch all path
