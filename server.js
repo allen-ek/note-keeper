@@ -52,7 +52,7 @@ app.post("/api/notes/", function(req,res) {
     });
         
 
-  }//ifstatement 
+  }// end of ifstatement 
   res.json(newNote)
 });
 
